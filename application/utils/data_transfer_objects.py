@@ -15,7 +15,7 @@ class DataTransferObjects:
         })
 
         self.text_list = self.ns.model('text_list', {
-            'text_list': List(Raw(self.plain_text))
+            'text_list': List(String(), example=['This is the first sentence.', 'This is the second sentence.'])
         })
 
         self.label = self.ns.model('label', {
