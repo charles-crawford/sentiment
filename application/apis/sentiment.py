@@ -3,7 +3,7 @@ from flask_restx import Resource, Namespace
 from application.utils.utils import load_model, get_sentiment, get_sentiment_batch
 from application.utils.data_transfer_objects import DataTransferObjects
 
-api = Namespace("sentiment", description="Sentiment analysis for tweets by entire text or split into sentences")
+api = Namespace("sentiment", description="Sentiment Analysis")
 dtos = DataTransferObjects(api)
 
 
