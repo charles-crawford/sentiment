@@ -1,7 +1,8 @@
 ## An App for Sentiment Analysis
 
-This is an example app that uses a built-in model from the Python library Flair to predict the 
-sentiment of the submitted text. One endpoint takes in a single object for sentiment prediction, and 
+This is an example app that uses a built-in model from the Python library 
+[Flair](https://github.com/flairNLP/flair) to predict the sentiment of the submitted text. 
+One endpoint takes in a single object for sentiment prediction, and 
 the other takes in a list for batch predictions. The sentiment model used is a transformer based 
 model trained on movie and product reviews that is located 
 [here](https://nlp.informatik.hu-berlin.de/resources/models/sentiment-curated-distilbert/sentiment-en-mix-distillbert.pt).
@@ -35,7 +36,8 @@ After Step 1 and 2, use these commands to deploy the app:
 
 ### Documentation
 After starting the app, the documentation is located at `http://0.0.0.0:5001/`. You can also monitor 
-the Celery tasks at  `http://0.0.0.0:5002/`. You can also
+the Celery tasks at  `http://0.0.0.0:5002/`. To check on any batch requests you sent, go to 
+`http://0.0.0.0:5001/` to check Mongo-Express for your resulting predictions.
 
 ### Testing the App
 After starting the app, the documentation is located at `http://0.0.0.0:5001/`.
