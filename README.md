@@ -37,7 +37,7 @@ After Step 1 and 2, use these commands to deploy the app:
 ### Documentation
 After starting the app, the documentation is located at `http://0.0.0.0:5001/`. You can also monitor 
 the Celery tasks at  `http://0.0.0.0:5002/`. To check on any batch requests you sent, go to 
-`http://0.0.0.0:5001/` to check Mongo-Express for your resulting predictions.
+`http://0.0.0.0:8081/` to check Mongo-Express for your resulting predictions.
 
 ### Testing the App
 After starting the app, the documentation is located at `http://0.0.0.0:5001/`.
