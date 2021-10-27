@@ -40,8 +40,9 @@ the Celery tasks at  `http://0.0.0.0:5002/`. To check on any batch requests you 
 `http://0.0.0.0:8081/` to check Mongo-Express for your resulting predictions.
 
 ### Testing the App
-After starting the app, the documentation is located at `http://0.0.0.0:5001/`.
-There is a curl request in `applications/test-requests.sh` you can use to check 
+After starting the app, the documentation is located at `http://0.0.0.0:5001/` where you can test in the 
+UI provided by Flask-RESTX.
+There is also a curl request in `applications/test-requests.sh` you can use to check 
 if the app is up and running. Run these commands from your EC2 shell:
 
 `chmod +x application/test-requests.sh`<br>
