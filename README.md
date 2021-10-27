@@ -36,10 +36,15 @@ After starting the app, the documentation is located at `http://0.0.0.0:5001/`. 
 the Celery tasks at  `http://0.0.0.0:5002/`. You can also
 
 ### Testing the App
-#### In your EC2
 After starting the app, the documentation is located at `http://0.0.0.0:5001/`.
 There is a curl request in `applications/test-requests.sh` you can use to check 
 if the app is up and running. Run these commands from your EC2 shell:
 
 `chmod +x application/test-requests.sh`<br>
 `./application/test-requests.sh`
+
+###  Deployed on your EC2
+Go to your AWS EC2 console and copy the public ip address for your EC2 instance.
+After starting the app, the documentation is located at `http://{your-ec2-ip}:5001/`.
+There is a commented out sample curl request in `applications/test-requests.txt` that you can copy and 
+paste to your local shell to test the app.  Be sure to replace the IP address with your EC2 public IP.
