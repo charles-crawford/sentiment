@@ -18,7 +18,9 @@ utilized to monitor the tasks that Celery is processing. The results of the asyn
 then written to mongodb. A [Mongo-Express](https://github.com/mongo-express/mongo-express) Docker 
 container is also started to monitor the MongoDB entries.   
 
-### Run the App on AWS EC2
+### Run the App 
+#### On AWS EC2
+If you're deploying locally just skip steps 1 and 2
 1. [ssh into your AWS EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html).
 2. [Install Docker on your EC2](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
 3. Clone the repo
