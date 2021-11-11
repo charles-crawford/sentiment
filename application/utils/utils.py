@@ -10,7 +10,9 @@ def load_model():
 
 
 def get_collection():
-    client = MongoClient(os.environ.get('MONGODB_URL'))
+    client = MongoClient(host=os.environ.get('MONGODB_URL'),
+                         username=os.environ.get('MONGODB_USERNAME'),
+                         password=os.environ.get('MONGODB_PASSWORD'))
     db = client[os.environ.get('MONGO_DB_NAME')]
     collection = db[os.environ.get('MONGO_COLLECTION_NAME')]
     return collection
