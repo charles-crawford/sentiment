@@ -1,5 +1,5 @@
 # sample request for the single prediction
-curl --location --request POST 'http://0.0.0.0:500/sentiment/predict-one' \
+curl --location --request POST 'http://0.0.0.0:5000/sentiment/predict-one' \
 --header 'Content-Type: application/json' \
 --data-raw '{"plain_text": "Some text that could be good or bad."}'
 
