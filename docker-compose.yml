@@ -25,8 +25,6 @@ services:
     container_name: redis
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
-    expose:
-      - 6379
     restart: always
 
   mongo:
@@ -35,8 +33,6 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=password
-    expose:
-      - 27017
     restart: always
 
   mongo-express:
