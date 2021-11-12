@@ -13,6 +13,6 @@ start_monitor_cmd = 'celery -A application.celery flower'
 subprocess.Popen(start_monitor_cmd.split(' '))
 
 app = create_app(celery=celery)
-
+ 
 if __name__ == "__main__":
     serve(app, host='0.0.0.0',  port=5000)
