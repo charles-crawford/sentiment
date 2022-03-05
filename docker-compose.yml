@@ -18,6 +18,13 @@ services:
     ports:
       - '5000:5000'
       - '5555:5555'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
     restart: always
 
   redis:

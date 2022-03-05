@@ -34,6 +34,11 @@ After Step 1 and 2, use these commands to deploy the app:
 `cd sentiment-light`<br>
 `docker compose up -d`
 
+### Note: 
+The `Dockerfile` and `docker-compose.yml` are set up to run on a GPU enabled machine. If you don't want
+to run on one of those, then use the `Dockerfile-cpu`. You'll have to remove the `-cpu` and add `-gpu`
+to the current `Dockerfile`.
+
 ### Documentation
 After starting the app, the documentation is located at `http://0.0.0.0:5000/`. You can also monitor 
 the Celery tasks at  `http://0.0.0.0:5555/`. To check on any batch requests you sent, go to 
