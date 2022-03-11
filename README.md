@@ -35,9 +35,10 @@ After Step 1 and 2, use these commands to deploy the app:
 `docker compose up -d`
 
 ### Note: 
-The `Dockerfile` and `docker-compose.yml` are set up to run on a GPU enabled machine. If you don't want
-to run on one of those, then use the `Dockerfile-cpu`. You'll have to remove the `-cpu` and add `-gpu`
-to the current `Dockerfile`.
+The `Dockerfile` and `docker-compose.yml` are set up to run on a GPU enabled machine. The container will 
+run on a CPU, but if you don't want the nvidia base image included, then use the `Dockerfile-cpu`. You'll have to 
+remove the `-cpu` and add `-gpu` to the current `Dockerfile`. docker-compose likes the name of the dockerfile
+to be the usual `Dockerfile`.
 
 ### Documentation
 After starting the app, the documentation is located at `http://0.0.0.0:5000/`. You can also monitor 
